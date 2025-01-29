@@ -86,16 +86,16 @@ public class AlbumService {
 
 
     public void delete(String id) {
-        Optional<User> user = userRepository.findById(userSession.id());
-
-        if (user.isEmpty()) {
-            return;
-        }
-        Optional<Album> mayBeAlbum = albumRepository.findByIdAndAddedFrom(id, user.get());
-
-        if (mayBeAlbum.isEmpty()) {
-            return;
-        }
-        albumRepository.delete(mayBeAlbum.get());
+//        Optional<User> user = userRepository.findById(userSession.id());
+//
+//        if (user.isEmpty()) {
+//            return;
+//        }
+//        Optional<Album> mayBeAlbum = albumRepository.findByIdAndAddedFrom(id, user.get());
+//
+//        if (mayBeAlbum.isEmpty()) {
+//            return;
+//        }
+        albumRepository.deleteById(id);;
     }
 }
