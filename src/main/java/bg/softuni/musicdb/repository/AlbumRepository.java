@@ -23,5 +23,4 @@ public interface AlbumRepository extends JpaRepository<Album, String> {
 
     Optional<Album> findByIdAndAddedFrom(String id, User user);
 
-
 }
