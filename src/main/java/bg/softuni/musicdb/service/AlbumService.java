@@ -71,7 +71,7 @@ public class AlbumService {
         Map<ArtistName, List<Album>> result = new HashMap<>();
 
         List<Artist> allArtists = artistRepository.findAll();
- // th:each = "cocktail: ${cocktailsData}">
+
         for (Artist artist : allArtists) {
             List<Album> albums = albumRepository.findAllByArtist(artist.getName());
             result.put(artist.getName(), albums);
@@ -86,16 +86,7 @@ public class AlbumService {
 
 
     public void delete(String id) {
-//        Optional<User> user = userRepository.findById(userSession.id());
-//
-//        if (user.isEmpty()) {
-//            return;
-//        }
-//        Optional<Album> mayBeAlbum = albumRepository.findByIdAndAddedFrom(id, user.get());
-//
-//        if (mayBeAlbum.isEmpty()) {
-//            return;
-//        }
+
         albumRepository.deleteById(id);;
     }
 }
