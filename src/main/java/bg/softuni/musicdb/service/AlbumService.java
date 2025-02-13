@@ -2,7 +2,6 @@ package bg.softuni.musicdb.service;
 
 import bg.softuni.musicdb.config.UserSession;
 import bg.softuni.musicdb.dto.AddAlbumDto;
-import bg.softuni.musicdb.dto.AlbumInfoDto;
 import bg.softuni.musicdb.entity.Album;
 import bg.softuni.musicdb.entity.Artist;
 import bg.softuni.musicdb.entity.User;
