@@ -61,6 +61,7 @@ public class AlbumController {
         }
         return "redirect:/home";
     }
+
     // Delete button !!!
     @DeleteMapping("/albums/{id}")
     public String deleteAlbum(@PathVariable String id) {
@@ -68,9 +69,4 @@ public class AlbumController {
        return "redirect:/home";
     }
 
-//    @GetMapping("/albums/{id}")
-//    public String deleteAlbum(@PathVariable String id) {
-//        albumService.delete(id);
-//        return "redirect:/home";
-//    }
 }
