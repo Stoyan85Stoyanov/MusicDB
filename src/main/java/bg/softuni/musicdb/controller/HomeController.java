@@ -2,8 +2,6 @@ package bg.softuni.musicdb.controller;
 
 import bg.softuni.musicdb.config.UserSession;
 import bg.softuni.musicdb.dto.AlbumInfoDto;
-import bg.softuni.musicdb.entity.Album;
-import bg.softuni.musicdb.enums.ArtistName;
 import bg.softuni.musicdb.service.AlbumService;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Controller;
@@ -11,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
-import java.util.Map;
 
 @Controller
 public class HomeController {
